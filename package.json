@@ -5,7 +5,10 @@
   "description": "A portfolio of my programming projects.",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "clean": "rm dist/*.html dist/*.css dist/*.js",
+    "build": "parcel build src/index.html --public-url . --no-source-maps",
+    "build-clean": "yarn clean && yarn build && git add dist",
+    "dev": "parcel src/index.html"
   },
   "dependencies": {
     "react": "^16.7.0",
@@ -14,7 +17,9 @@
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.11.0"
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.16.1",
+    "typescript": "^3.2.4"
   },
   "author": "Tanner Nielsen",
   "license": "ISC"
