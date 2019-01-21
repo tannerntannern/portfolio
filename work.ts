@@ -22,7 +22,7 @@ enum Technology {
 
 type Timeline = {start: string, end?: string};
 
-type Project = {
+export type Project = {
 	type: Type,
 	category: Category,
 	technologies: Technology[],
