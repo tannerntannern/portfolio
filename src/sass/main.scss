@@ -1,20 +1,32 @@
 @import 'layout';
 
-body {
-  background-image: url(https://naldzgraphics.net/wp-content/uploads/2014/09/11-seamless-leather-texture.jpg);
-}
-
-.gold {
-  background-image: url(https://www.textures.com/system/gallery/photos/Substance/ps132053/132053_header2_small.jpg);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+//body {
+//  background-image: url(https://naldzgraphics.net/wp-content/uploads/2014/09/11-seamless-leather-texture.jpg);
+//}
+//
+//.gold {
+//  //background-image: url(https://www.textures.com/system/gallery/photos/Substance/ps132053/132053_header2_small.jpg);
+//  background-image: url(../img/gold-textured.jpg);
+//  background-size: unset;
+//  background-attachment: fixed;
+//  background-clip: text;
+//  -webkit-background-clip: text;
+//  -webkit-text-fill-color: transparent;
+//}
+//
+//#center {
+//  font-size: 3em;
+//}
 
 #center {
-  font-size: 3em;
+  font-family: 'Palanquin', sans-serif;
+
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  max-width: 600px;
+
+  h1 {margin-top: 0}
+  p {margin-bottom: 0}
 }

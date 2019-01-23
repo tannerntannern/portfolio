@@ -5,10 +5,10 @@
   "description": "A portfolio of my programming projects.",
   "main": "index.js",
   "scripts": {
-    "clean": "rm dist/*.html dist/*.css dist/*.js",
-    "build": "parcel build src/index.html --public-url . --no-source-maps",
-    "build-clean": "yarn clean && yarn build && git add dist",
-    "dev": "parcel src/index.html"
+    "clean": "rm docs/*.html docs/*.css docs/*.js",
+    "build": "parcel build src/index.html --public-url . --no-source-maps --out-dir docs",
+    "build-clean": "yarn clean && yarn build && git add docs",
+    "dev": "parcel src/index.html --out-dir docs"
   },
   "dependencies": {
     "react": "^16.7.0",
