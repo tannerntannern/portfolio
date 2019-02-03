@@ -1,5 +1,5 @@
 import React from 'react';
-import {Technology} from '../../types';
+import {Technology} from '../types';
 
 // This structure serves two purposes: 1) hold the links and icon names of each technology and 2) generate TS errors
 // if any Technology entries are added without updating this structure.
