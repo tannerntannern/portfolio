@@ -14,11 +14,12 @@ export enum Technology {
 	'Vue.js', React,
 	Materialize,
 	php, Laravel, 'Laravel Voyager',
-	GameMaker
+	GameMaker,
+	'Digital Ocean'
 }
 
 export enum DevelopmentStatus {
-	Completed, Maintaining, Active, Paused, Abandoned
+	Completed, Maintaining, Active, Paused, Dead
 }
 
 export type Timeline = {start: Date, end?: Date};
