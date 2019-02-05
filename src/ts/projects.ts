@@ -1,27 +1,28 @@
-import {Category, Collaborator, DevelopmentStatus, Project, Technology, Type} from './types';
+import {Collaborator, Project} from './types';
 
 const collaborators: {[name: string]: Collaborator} = {
 	jordan: {name: 'Jordan Hendrickson', website: 'http://jordanhendrickson.me'},
 	joe: {name: 'Joseph Tortorello', website: 'https://joet.co'}
 };
 
-export const Projects: Project[] = [{
-	title: 'SportsLab360',
+export const projects: Project[] = [{
+	title: 'SportsLab360 Platform',
+	company: 'SportsLab360 LLC',
 	description: 'An online program aimed at youth soccer clubs to help refine players\' tactical abilities.',
-	type: Type.Professional,
-	category: Category.Website,
+	type: 'Professional',
+	category: 'Website',
 	openSource: false,
 	timeline: {start: new Date('3/15/2017'), end: new Date('1/5/2019')},
-	status: DevelopmentStatus.Completed,
+	status: 'Completed',
 	collaborators: [collaborators.jordan, collaborators.joe],
 	technologies: [
-		Technology.Laravel,
-		Technology.php,
-		Technology.HTML,
-		Technology.SASS,
-		Technology.JavaScript,
-		Technology['Vue.js'],
-		Technology.Materialize
+		'Laravel',
+		'php',
+		'HTML',
+		'SASS',
+		'JavaScript',
+		'Vue.js',
+		'Materialize',
 	],
 	images: ['sportslab360_1.png'],
 	links: {
@@ -30,18 +31,18 @@ export const Projects: Project[] = [{
 }, {
 	title: 'Abrahamson Nurseries Website',
 	description: 'A custom business website complete with an intuitive CMS.',
-	type: Type.Professional,
-	category: Category.Website,
+	type: 'Professional',
+	category: 'Website',
 	openSource: false,
 	timeline: {start: new Date('1/15/2018'), end: new Date('3/25/2018')},
-	status: DevelopmentStatus.Completed,
+	status: 'Completed',
 	technologies: [
-		Technology.Laravel,
-		Technology['Laravel Voyager'],
-		Technology.php,
-		Technology.HTML,
-		Technology.SASS,
-		Technology.JavaScript
+		'Laravel',
+		'Laravel Voyager',
+		'php',
+		'HTML',
+		'SASS',
+		'JavaScript',
 	],
 	images: ['abrahamson_1.png'],
 	links: {
@@ -50,16 +51,16 @@ export const Projects: Project[] = [{
 }, {
 	title: 'Yob - Graph Editor',
 	description: 'A simple and streamlined graphical analysis add-on for Google Docs.',
-	type: Type.Personal,
-	category: Category.Software,
+	type: 'Personal',
+	category: 'Software',
 	openSource: false,
 	timeline: {start: new Date('7/15/2014'), end: new Date('12/29/2016')},
-	status: DevelopmentStatus.Completed,
+	status: 'Completed',
 	collaborators: [collaborators.jordan],
 	technologies: [
-		Technology.HTML,
-		Technology.CSS,
-		Technology.JavaScript
+		'HTML',
+		'CSS',
+		'JavaScript'
 	],
 	images: ['yob_1.png'],
 	links: {
@@ -69,13 +70,13 @@ export const Projects: Project[] = [{
 }, {
 	title: 'micro-observer',
 	description: 'A tiny TS/JS library for working with nested ES6 Proxies.',
-	type: Type.Personal,
-	category: Category.Package,
+	type: 'Personal',
+	category: 'Package',
 	openSource: true,
 	timeline: {start: new Date('7/4/2018')},
-	status: DevelopmentStatus.Maintaining,
+	status: 'Maintaining',
 	technologies: [
-		Technology.TypeScript
+		'TypeScript'
 	],
 	links: {
 		source: 'https://github.com/tannerntannern/micro-observer',
@@ -85,13 +86,13 @@ export const Projects: Project[] = [{
 }, {
 	title: 'ts-mixer',
 	description: 'A small TypeScript package that makes the mixin pattern feasible.',
-	type: Type.Personal,
-	category: Category.Package,
+	type: 'Personal',
+	category: 'Package',
 	openSource: true,
 	timeline: {start: new Date('10/16/2018')},
-	status: DevelopmentStatus.Maintaining,
+	status: 'Maintaining',
 	technologies: [
-		Technology.TypeScript
+		'TypeScript'
 	],
 	links: {
 		source: 'https://github.com/tannerntannern/ts-mixer',

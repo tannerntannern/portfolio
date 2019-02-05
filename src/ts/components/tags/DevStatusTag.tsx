@@ -1,7 +1,7 @@
 import React from 'react';
 import {DevelopmentStatus} from '../../types';
 
-const devStatusDataMap: {[K in keyof typeof DevelopmentStatus]: {icon: string}} = {
+const devStatusDataMap: {[K in DevelopmentStatus]: {icon: string}} = {
 	Completed: {icon: 'fas fa-check-circle'},
 	Maintaining: {icon: 'fas fa-wrench'},
 	Active: {icon: 'fas fa-laptop-code'},
@@ -9,7 +9,7 @@ const devStatusDataMap: {[K in keyof typeof DevelopmentStatus]: {icon: string}} 
 	Dead: {icon: 'fas fa-skull'}
 };
 
-export const DevStatusTag = (props: {name: keyof typeof DevelopmentStatus}) => (
+export const DevStatusTag = (props: {name: DevelopmentStatus}) => (
 	<span>
 		<i className={devStatusDataMap[props.name].icon}></i>
 		{props.name}

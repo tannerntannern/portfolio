@@ -3,7 +3,7 @@ import {Technology} from '../../types';
 
 // This structure serves two purposes: 1) hold the links and icon names of each technology and 2) generate TS errors
 // if any Technology entries are added without updating this structure.
-const techDataMap: {[K in keyof typeof Technology]: {icon?: string, link?: string}} = {
+const techDataMap: {[K in Technology]: {icon?: string, link?: string}} = {
 	HTML: {icon: 'fab fa-html5'},
 	Pug: {link: 'https://pugjs.org'},
 	CSS: {icon: 'fab fa-css3-alt'},
@@ -21,7 +21,7 @@ const techDataMap: {[K in keyof typeof Technology]: {icon?: string, link?: strin
 	'Digital Ocean': {icon: 'fab fa-digital-ocean', link: 'https://www.digitalocean.com/'}
 };
 
-export const TechTag = (props: {name: keyof typeof Technology}) => (
+export const TechTag = (props: {name: Technology}) => (
 	<a href={techDataMap[props.name].link}>
 		<i className={techDataMap[props.name].icon}></i>
 		<span>{props.name}</span>

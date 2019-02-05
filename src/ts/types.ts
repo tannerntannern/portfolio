@@ -1,26 +1,19 @@
-export enum Type {
-	Professional, Personal
-}
+export type Type = 'Professional' | 'Personal';
 
-export enum Category {
-	Website, Software, Package, Framework
-}
+export type Category = 'Website' | 'Software' | 'Package' | 'Framework';
 
-export enum Technology {
-	HTML, Pug,
-	CSS, SASS,
-	JavaScript, TypeScript,
-	'Node.js',
-	'Vue.js', React,
-	Materialize,
-	php, Laravel, 'Laravel Voyager',
-	GameMaker,
-	'Digital Ocean'
-}
+export type Technology =
+	'HTML' | 'Pug' |
+	'CSS' | 'SASS' |
+	'JavaScript' | 'TypeScript' |
+	'Node.js' |
+	'Vue.js' | 'React' |
+	'Materialize' |
+	'php' | 'Laravel' | 'Laravel Voyager' |
+	'GameMaker' |
+	'Digital Ocean';
 
-export enum DevelopmentStatus {
-	Completed, Maintaining, Active, Paused, Dead
-}
+export type DevelopmentStatus = 'Completed' | 'Maintaining' | 'Active' | 'Paused' | 'Dead';
 
 export type Timeline = {start: Date, end?: Date};
 
@@ -33,6 +26,7 @@ export type Project = {
 	title: string,
 	description: string,
 	type: Type,
+	company?: string,
 	category: Category,
 	openSource: boolean,
 	timeline: Timeline,
