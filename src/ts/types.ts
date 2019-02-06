@@ -15,6 +15,8 @@ export type Technology =
 
 export type DevelopmentStatus = 'Completed' | 'Maintaining' | 'Active' | 'Paused' | 'Dead';
 
+export type Link = 'website' | 'demo' | 'source' | 'documentation' | 'install' | 'download' | 'blogPost';
+
 export type Timeline = {start: Date, end?: Date};
 
 export type Collaborator = {
@@ -31,13 +33,6 @@ export type Project = {
 	status: DevelopmentStatus,
 	collaborators?: Collaborator[],
 	technologies: Technology[],
-	images?: string[],
-	links: {
-		website?: string,
-		demo?: string,
-		source?: string,
-		install?: string,
-		download?: string,
-		blogPost?: string
-	}
+	images: string[],
+	links: {[K in Link]?: string}
 }

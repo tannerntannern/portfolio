@@ -88,6 +88,7 @@ export const projects: Project[] = [{
 	technologies: [
 		'TypeScript'
 	],
+	images: [],
 	links: {
 		source: 'https://github.com/tannerntannern/micro-observer',
 		install: 'https://npmjs.com/package/micro-observer',
@@ -103,6 +104,7 @@ export const projects: Project[] = [{
 	technologies: [
 		'TypeScript'
 	],
+	images: [],
 	links: {
 		source: 'https://github.com/tannerntannern/ts-mixer',
 		install: 'https://npmjs.com/package/ts-mixer',
