@@ -1,3 +1,4 @@
+import React from 'react';
 import {Collaborator, Project} from './types';
 
 const collaborators: {[name: string]: Collaborator} = {
@@ -8,7 +9,21 @@ const collaborators: {[name: string]: Collaborator} = {
 export const projects: Project[] = [{
 	title: 'SportsLab360 Platform',
 	company: 'SportsLab360 LLC',
-	description: 'An online program aimed at youth soccer clubs to help refine players\' tactical abilities.',
+	description: (<div>
+		<p>
+			SportsLab360 is an online program aimed at youth soccer clubs to help refine how players think and plan on
+			the field. Players, coaches, and club directors can all benefit from what the program can offers:  Players
+			have access to videos, lessons, quizzes, and other resources to help them improve their game.  Coaches can
+			organize players into teams, assign specific modules, track player progress, and insert their own ideas
+			directly into the videos and lessons if they want to clarify or add upon the existing material.  Club
+			directors can do all these things, as well as purchase discounted club-wide licenses and oversee their
+			clubs at a higher level than coaches.
+		</p>
+		<p>
+			While the company was getting off the ground, I was the lead web developer at SportsLab360.  I had a small
+			team, and we built the whole platform from scratch.
+		</p>
+	</div>),
 	type: 'Professional',
 	category: 'Website',
 	openSource: false,

@@ -7,6 +7,6 @@ export const Project = (props: {data: ProjectType}) => (
 		<h1>{props.data.title}</h1>
 		<TypeTag name={props.data.type}/>
 		{props.data.company && <em>{props.data.company}</em>}
-		<p>{props.data.description}</p>
+		{props.data.description}
 	</div>
 );
