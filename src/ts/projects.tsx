@@ -8,7 +8,6 @@ const collaborators: {[name: string]: Collaborator} = {
 
 export const projects: Project[] = [{
 	title: 'SportsLab360 Platform',
-	company: 'SportsLab360 LLC',
 	description: (<div>
 		<p>
 			SportsLab360 is an online program aimed at youth soccer clubs to help refine how players think and plan on
@@ -26,7 +25,6 @@ export const projects: Project[] = [{
 	</div>),
 	type: 'Professional',
 	category: 'Website',
-	openSource: false,
 	timeline: {start: new Date('3/15/2017'), end: new Date('1/5/2019')},
 	status: 'Completed',
 	collaborators: [collaborators.jordan, collaborators.joe],
@@ -48,7 +46,6 @@ export const projects: Project[] = [{
 	description: 'A custom business website complete with an intuitive CMS.',
 	type: 'Professional',
 	category: 'Website',
-	openSource: false,
 	timeline: {start: new Date('1/15/2018'), end: new Date('3/25/2018')},
 	status: 'Completed',
 	technologies: [
@@ -68,7 +65,6 @@ export const projects: Project[] = [{
 	description: 'A simple and streamlined graphical analysis add-on for Google Docs.',
 	type: 'Personal',
 	category: 'Software',
-	openSource: false,
 	timeline: {start: new Date('7/15/2014'), end: new Date('12/29/2016')},
 	status: 'Completed',
 	collaborators: [collaborators.jordan],
@@ -87,7 +83,6 @@ export const projects: Project[] = [{
 	description: 'A tiny TS/JS library for working with nested ES6 Proxies.',
 	type: 'Personal',
 	category: 'Package',
-	openSource: true,
 	timeline: {start: new Date('7/4/2018')},
 	status: 'Maintaining',
 	technologies: [
@@ -103,7 +98,6 @@ export const projects: Project[] = [{
 	description: 'A small TypeScript package that makes the mixin pattern feasible.',
 	type: 'Personal',
 	category: 'Package',
-	openSource: true,
 	timeline: {start: new Date('10/16/2018')},
 	status: 'Maintaining',
 	technologies: [
