@@ -3,7 +3,8 @@ import {Type} from '../../types';
 
 const typeDataMap: {[K in Type]: {icon: string}} = {
 	Personal: {icon: 'fas fa-user'},
-	Professional: {icon: 'fas fa-user-tie'}
+	Professional: {icon: 'fas fa-user-tie'},
+	School: {icon: 'fas fa-book'}
 };
 
 export const TypeTag = (props: {name: Type}) => (

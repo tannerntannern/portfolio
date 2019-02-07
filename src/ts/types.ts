@@ -1,4 +1,4 @@
-export type Type = 'Professional' | 'Personal';
+export type Type = 'Professional' | 'Personal' | 'School';
 
 export type Category = 'Website' | 'Software' | 'Package' | 'Framework';
 
